@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render 'transactions/transaction_card', transaction: @income %>
+
+<div>
+  <%= link_to "Editar", edit_income_path(@income) %> |
+  <%= link_to "Tornar al llistat", incomes_path %>
+
+  <%= button_to "Esborrar", @income, method: :delete, class: "bg-red-800" %>
+</div>

@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ingressos</h1>
+
+<div class="py-6">
+  <% @incomes.each do |income| %>
+    <p>
+    <%= income.title %> | <%= income.value %> <%= income.formatted_currency %> | <%= link_to "Veure detalls", income %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Entrar nou ingrés", new_income_path %>
