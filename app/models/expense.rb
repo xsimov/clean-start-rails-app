@@ -1,5 +1,5 @@
 class Expense < Transaction
-  validates :transaction_category_id, presence: true
+  validates :transaction_category_id
 
   belongs_to :transaction_category
 

@@ -1,0 +1,14 @@
+inherit_from: .rubocop_todo.yml
+require: 
+  - rubocop-rails
+  - rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Style/RedundantConstantBase:
+  Exclude:
+    - 'config/environments/*'
+AllCops:
+  NewCops: enable
+

@@ -21,7 +21,7 @@ class ExpensesController < ApplicationController
 
     respond_to do |format|
       if @expense.save
-        format.html { redirect_to new_expense_url, notice: "Expense was successfully created." }
+        format.html { redirect_to new_expense_url, notice: 'Expense was successfully created.' }
         format.json { render :show, status: :created, location: @expense }
       else
         prepare_categories_and_producers
@@ -35,7 +35,7 @@ class ExpensesController < ApplicationController
     respond_to do |format|
       if @expense.update(expense_params)
         prepare_categories_and_producers
-        format.html { redirect_to expense_url(@expense), notice: "Expense was successfully updated." }
+        format.html { redirect_to expense_url(@expense), notice: 'Expense was successfully updated.' }
         format.json { render :show, status: :ok, location: @expense }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -48,7 +48,7 @@ class ExpensesController < ApplicationController
     @expense.destroy
 
     respond_to do |format|
-      format.html { redirect_to expenses_url, notice: "Expense was successfully destroyed." }
+      format.html { redirect_to expenses_url, notice: 'Expense was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
