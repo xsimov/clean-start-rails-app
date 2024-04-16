@@ -6,9 +6,13 @@ require:
 Style/Documentation:
   Enabled: false
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Style/RedundantConstantBase:
   Exclude:
     - 'config/environments/*'
+
 AllCops:
   NewCops: enable
 

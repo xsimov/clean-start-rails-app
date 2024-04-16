@@ -6,15 +6,13 @@ class ExpensesController < ApplicationController
     @expenses = Expense.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @expense = Expense.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @expense = Expense.new(expense_params)

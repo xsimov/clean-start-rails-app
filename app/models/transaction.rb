@@ -1,7 +1,7 @@
 class Transaction < ApplicationRecord
   CURRENCY_SYMBOLS = {
     eur: '€'
-  }
+  }.freeze
 
   enum currency: { eur: 0 }
 
