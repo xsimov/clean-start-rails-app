@@ -3,7 +3,7 @@ class Transaction < ApplicationRecord
     eur: '€'
   }
 
-  enum currency: [:eur]
+  enum currency: { eur: 0 }
 
   validates :title, :purchased_on, :value, :producer_id, presence: true
 

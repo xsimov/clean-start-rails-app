@@ -1,6 +1,6 @@
 class ExpensesController < ApplicationController
-  before_action :set_expense, only: %i[ show edit update destroy ]
-  before_action :prepare_categories_and_producers, only: %i[ edit new ]
+  before_action :set_expense, only: %i[show edit update destroy]
+  before_action :prepare_categories_and_producers, only: %i[edit new]
 
   def index
     @expenses = Expense.all
@@ -54,6 +54,7 @@ class ExpensesController < ApplicationController
   end
 
   private
+
   def set_expense
     @expense = Expense.find(params[:id])
   end

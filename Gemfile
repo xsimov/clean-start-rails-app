@@ -15,10 +15,10 @@ gem 'dartsass-rails'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'redis', '>= 4.0.1'
-gem 'tzinfo-data', platforms: %i[ windows jruby ]
+gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
-  gem 'debug', platforms: %i[ mri windows ]
+  gem 'debug', platforms: %i[mri windows]
   gem 'rubocop-rails'
 end
 
